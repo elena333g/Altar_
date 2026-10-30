@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,10 +10,14 @@
 
     <style>
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Georgia, serif;
-            background-color: #24132e;
+            background-color: #1c1024;
             color: white;
         }
 
@@ -20,11 +25,16 @@
             background-color: #8b1e3f;
             text-align: center;
             padding: 30px;
+            border-bottom: 5px solid #f77f00;
         }
 
         header h1 {
             color: #ffd166;
-            font-size: 40px;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
         }
 
         nav {
@@ -40,49 +50,63 @@
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: #24132e;
+        }
+
         .contenedor {
             text-align: center;
-            padding: 30px;
+            padding: 30px 20px;
         }
 
         .altar {
-            background-color: #3b2047;
+            background-color: #321b3a;
             padding: 25px;
             border-radius: 15px;
-            max-width: 900px;
+            max-width: 950px;
             margin: auto;
         }
 
         .altar img {
-            width: 90%;
-            max-width: 650px;
+            width: 100%;
+            max-width: 750px;
             border-radius: 15px;
-            border: 5px solid #f77f00;
+            border: 4px solid #f77f00;
         }
 
         h2 {
             color: #ffd166;
+            font-size: 30px;
         }
 
         .elementos {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
         }
 
         .tarjeta {
             background-color: #8b1e3f;
-            width: 250px;
+            width: 260px;
             padding: 15px;
             border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: scale(1.04);
         }
 
         .tarjeta img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
             border-radius: 10px;
+        }
+
+        .tarjeta h3 {
+            color: #ffd166;
         }
 
         .boton {
@@ -93,17 +117,19 @@
             border-radius: 10px;
             text-decoration: none;
             font-weight: bold;
+            margin-top: 15px;
         }
 
         .boton:hover {
             background-color: #ffd166;
-            color: black;
+            color: #1c1024;
         }
 
         footer {
             background-color: #8b1e3f;
             text-align: center;
             padding: 20px;
+            margin-top: 30px;
         }
 
     </style>
@@ -114,7 +140,7 @@
 
     <header>
 
-        <h1>Altar de Muertos</h1>
+        <h1>🌼 Altar de Muertos 🌼</h1>
 
         <p>Una tradición mexicana llena de amor y recuerdos</p>
 
@@ -135,8 +161,8 @@
             <h2>Nuestro Altar Mexicano</h2>
 
             <img
-                src="https://images.unsplash.com/photo-1603909223429-69bb7101f420"
-                alt="Flores de cempasúchil">
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Ofrenda%20D%C3%ADa%20de%20Muertos.jpg?width=900"
+                alt="Ofrenda mexicana de Día de Muertos">
 
             <p>
                 El altar de muertos es una hermosa tradición mexicana
@@ -158,8 +184,8 @@
                 <h3>Flor de Cempasúchil</h3>
 
                 <img
-                    src="https://images.unsplash.com/photo-1603909223429-69bb7101f420"
-                    alt="Flor de cempasúchil">
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Cempas%C3%BAchil%20en%20ofrenda.jpg?width=500"
+                    alt="Flores de cempasúchil en una ofrenda">
 
             </div>
 
@@ -168,8 +194,8 @@
                 <h3>Veladoras</h3>
 
                 <img
-                    src="https://images.unsplash.com/photo-1603006905003-be475563bc59"
-                    alt="Veladoras encendidas">
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Velas%20en%20Ofrenda.jpg?width=500"
+                    alt="Velas en una ofrenda de Día de Muertos">
 
             </div>
 
@@ -178,8 +204,8 @@
                 <h3>Pan de Muerto</h3>
 
                 <img
-                    src="https://images.unsplash.com/photo-1608198093002-ad4e005484df"
-                    alt="Pan de muerto">
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Pan%20de%20muerto%20y%20calaveritas%20de%20az%C3%BAcar%20en%20ofrenda.jpg?width=500"
+                    alt="Pan de muerto y calaveritas de azúcar">
 
             </div>
 
@@ -188,8 +214,8 @@
                 <h3>Calaveritas</h3>
 
                 <img
-                    src="https://images.unsplash.com/photo-1509557965875-b88c97052f0e"
-                    alt="Calaveritas decorativas">
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Calaveritas%20de%20az%C3%BAcar.jpg?width=500"
+                    alt="Calaveritas de azúcar mexicanas">
 
             </div>
 
@@ -198,8 +224,18 @@
                 <h3>Papel Picado</h3>
 
                 <img
-                    src="https://images.unsplash.com/photo-1509674853375-7c7c7c7c7c7c"
-                    alt="Decoración mexicana">
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Papel%20picado%20y%20su%20luz.JPG?width=500"
+                    alt="Papel picado tradicional mexicano">
+
+            </div>
+
+            <div class="tarjeta">
+
+                <h3>Altar Tradicional</h3>
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Altar%20de%20Muertos%20en%20Sayulita.jpg?width=500"
+                    alt="Altar tradicional de muertos en México">
 
             </div>
 
@@ -212,6 +248,10 @@
         <div class="altar">
 
             <h2>Conoce más sobre el Día de Muertos</h2>
+
+            <p>
+                Descubre más sobre esta hermosa tradición mexicana.
+            </p>
 
             <a
                 class="boton"
@@ -230,7 +270,7 @@
 
         <p>Altar de Muertos | Tradiciones Mexicanas</p>
 
-        <p>Hecho con amor por México</p>
+        <p>Hecho con amor por México ❤️</p>
 
     </footer>
 
