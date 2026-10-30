@@ -1,101 +1,54 @@
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Altar de Muertos</title>
+    <title>Altar Mexicano</title>
 
     <style>
-
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             margin: 0;
-            font-family: Georgia, serif;
-            background-color: #1c1024;
+            font-family: Arial, sans-serif;
+            background: #2b1235;
             color: white;
+            text-align: center;
         }
 
         header {
-            background-color: #8b1e3f;
-            text-align: center;
-            padding: 30px;
-            border-bottom: 5px solid #f77f00;
-        }
-
-        header h1 {
-            color: #ffd166;
-            font-size: 42px;
-        }
-
-        header p {
-            font-size: 18px;
-        }
-
-        nav {
-            background-color: #f77f00;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #24132e;
-        }
-
-        .contenedor {
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        .altar {
-            background-color: #321b3a;
+            background: #9b174c;
             padding: 25px;
-            border-radius: 15px;
-            max-width: 950px;
-            margin: auto;
         }
 
-        .altar img {
-            width: 100%;
-            max-width: 750px;
-            border-radius: 15px;
-            border: 4px solid #f77f00;
-        }
-
-        h2 {
+        h1 {
             color: #ffd166;
-            font-size: 30px;
         }
 
-        .elementos {
+        .contenido {
+            padding: 25px;
+        }
+
+        .imagen-principal {
+            width: 90%;
+            max-width: 800px;
+            border: 5px solid #f77f00;
+            border-radius: 15px;
+        }
+
+        .galeria {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 25px;
+            gap: 20px;
+            margin-top: 30px;
         }
 
         .tarjeta {
-            background-color: #8b1e3f;
-            width: 260px;
+            background: #641c45;
             padding: 15px;
-            border-radius: 15px;
-            transition: transform 0.3s;
-        }
-
-        .tarjeta:hover {
-            transform: scale(1.04);
+            width: 280px;
+            border-radius: 12px;
         }
 
         .tarjeta img {
@@ -105,175 +58,94 @@
             border-radius: 10px;
         }
 
-        .tarjeta h3 {
+        h2 {
             color: #ffd166;
         }
 
-        .boton {
-            display: inline-block;
-            background-color: #f77f00;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 15px;
-        }
-
-        .boton:hover {
-            background-color: #ffd166;
-            color: #1c1024;
+        a {
+            color: #ffd166;
         }
 
         footer {
-            background-color: #8b1e3f;
-            text-align: center;
-            padding: 20px;
+            background: #9b174c;
+            padding: 15px;
             margin-top: 30px;
         }
-
     </style>
-
 </head>
 
 <body>
 
     <header>
-
         <h1>🌼 Altar de Muertos 🌼</h1>
-
-        <p>Una tradición mexicana llena de amor y recuerdos</p>
-
+        <p>Una tradición llena de amor y recuerdos</p>
     </header>
 
-    <nav>
+    <div class="contenido">
 
-        <a href="#inicio">Inicio</a>
-        <a href="#elementos">Elementos</a>
-        <a href="#tradicion">Tradición</a>
+        <h2>Ofrenda Mexicana</h2>
 
-    </nav>
+        <img
+            class="imagen-principal"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Folclor%20mexicano%20-%20D%C3%ADa%20de%20muertos%20%281%29.jpg"
+            alt="Altar mexicano de Día de Muertos">
 
-    <section class="contenedor" id="inicio">
-
-        <div class="altar">
-
-            <h2>Nuestro Altar Mexicano</h2>
-
-            <img
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/Ofrenda%20D%C3%ADa%20de%20Muertos.jpg?width=900"
-                alt="Ofrenda mexicana de Día de Muertos">
-
-            <p>
-                El altar de muertos es una hermosa tradición mexicana
-                dedicada a recordar a nuestros seres queridos.
-            </p>
-
-        </div>
-
-    </section>
-
-    <section class="contenedor" id="elementos">
+        <p>
+            Una hermosa tradición mexicana para recordar
+            a nuestros seres queridos.
+        </p>
 
         <h2>Elementos del Altar</h2>
 
-        <div class="elementos">
+        <div class="galeria">
 
             <div class="tarjeta">
-
-                <h3>Flor de Cempasúchil</h3>
+                <h3>Ofrenda tradicional</h3>
 
                 <img
-                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Cempas%C3%BAchil%20en%20ofrenda.jpg?width=500"
-                    alt="Flores de cempasúchil en una ofrenda">
-
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Altar%20de%20Muertos%20en%20Sayulita.jpg"
+                    alt="Ofrenda tradicional mexicana">
             </div>
 
             <div class="tarjeta">
+                <h3>Flores de cempasúchil</h3>
 
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Cempas%C3%BAchil%20en%20ofrenda%20-%20Mixquic%20I.jpg"
+                    alt="Flores de cempasúchil en una ofrenda">
+            </div>
+
+            <div class="tarjeta">
+                <h3>Calaveritas de azúcar</h3>
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Calaveras%20de%20azucar.jpg"
+                    alt="Calaveritas de azúcar mexicanas">
+            </div>
+
+            <div class="tarjeta">
                 <h3>Veladoras</h3>
 
                 <img
-                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Velas%20en%20Ofrenda.jpg?width=500"
-                    alt="Velas en una ofrenda de Día de Muertos">
-
-            </div>
-
-            <div class="tarjeta">
-
-                <h3>Pan de Muerto</h3>
-
-                <img
-                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Pan%20de%20muerto%20y%20calaveritas%20de%20az%C3%BAcar%20en%20ofrenda.jpg?width=500"
-                    alt="Pan de muerto y calaveritas de azúcar">
-
-            </div>
-
-            <div class="tarjeta">
-
-                <h3>Calaveritas</h3>
-
-                <img
-                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Calaveritas%20de%20az%C3%BAcar.jpg?width=500"
-                    alt="Calaveritas de azúcar mexicanas">
-
-            </div>
-
-            <div class="tarjeta">
-
-                <h3>Papel Picado</h3>
-
-                <img
-                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Papel%20picado%20y%20su%20luz.JPG?width=500"
-                    alt="Papel picado tradicional mexicano">
-
-            </div>
-
-            <div class="tarjeta">
-
-                <h3>Altar Tradicional</h3>
-
-                <img
-                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Altar%20de%20Muertos%20en%20Sayulita.jpg?width=500"
-                    alt="Altar tradicional de muertos en México">
-
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Velas%20en%20Ofrenda.jpg"
+                    alt="Veladoras en una ofrenda mexicana">
             </div>
 
         </div>
 
-    </section>
+        <h2>Conoce más</h2>
 
-    <section class="contenedor" id="tradicion">
-
-        <div class="altar">
-
-            <h2>Conoce más sobre el Día de Muertos</h2>
-
-            <p>
-                Descubre más sobre esta hermosa tradición mexicana.
-            </p>
-
-            <a
-                class="boton"
-                href="https://www.gob.mx/cultura"
-                target="_blank">
-
-                Visitar página web
-
+        <p>
+            <a href="https://www.gob.mx/cultura" target="_blank">
+                Visitar la página de Cultura de México
             </a>
+        </p>
 
-        </div>
-
-    </section>
+    </div>
 
     <footer>
-
         <p>Altar de Muertos | Tradiciones Mexicanas</p>
-
-        <p>Hecho con amor por México ❤️</p>
-
     </footer>
 
 </body>
-
 </html>
