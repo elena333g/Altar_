@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Altar de Muertos</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #24132e;
+            color: white;
+        }
+
+        header {
+            background-color: #8b1e3f;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            color: #ffd166;
+            font-size: 40px;
+        }
+
+        nav {
+            background-color: #f77f00;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .contenedor {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .altar {
+            background-color: #3b2047;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .altar img {
+            width: 90%;
+            max-width: 650px;
+            border-radius: 15px;
+            border: 5px solid #f77f00;
+        }
+
+        h2 {
+            color: #ffd166;
+        }
+
+        .elementos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background-color: #8b1e3f;
+            width: 250px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #f77f00;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background-color: #ffd166;
+            color: black;
+        }
+
+        footer {
+            background-color: #8b1e3f;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Altar de Muertos</h1>
+
+        <p>Una tradición mexicana llena de amor y recuerdos</p>
+
+    </header>
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+        <a href="#elementos">Elementos</a>
+        <a href="#tradicion">Tradición</a>
+
+    </nav>
+
+    <section class="contenedor" id="inicio">
+
+        <div class="altar">
+
+            <h2>Nuestro Altar Mexicano</h2>
+
+            <img
+                src="https://images.unsplash.com/photo-1603909223429-69bb7101f420"
+                alt="Flores de cempasúchil">
+
+            <p>
+                El altar de muertos es una hermosa tradición mexicana
+                dedicada a recordar a nuestros seres queridos.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="contenedor" id="elementos">
+
+        <h2>Elementos del Altar</h2>
+
+        <div class="elementos">
+
+            <div class="tarjeta">
+
+                <h3>Flor de Cempasúchil</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1603909223429-69bb7101f420"
+                    alt="Flor de cempasúchil">
+
+            </div>
+
+            <div class="tarjeta">
+
+                <h3>Veladoras</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1603006905003-be475563bc59"
+                    alt="Veladoras encendidas">
+
+            </div>
+
+            <div class="tarjeta">
+
+                <h3>Pan de Muerto</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1608198093002-ad4e005484df"
+                    alt="Pan de muerto">
+
+            </div>
+
+            <div class="tarjeta">
+
+                <h3>Calaveritas</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1509557965875-b88c97052f0e"
+                    alt="Calaveritas decorativas">
+
+            </div>
+
+            <div class="tarjeta">
+
+                <h3>Papel Picado</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1509674853375-7c7c7c7c7c7c"
+                    alt="Decoración mexicana">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contenedor" id="tradicion">
+
+        <div class="altar">
+
+            <h2>Conoce más sobre el Día de Muertos</h2>
+
+            <a
+                class="boton"
+                href="https://www.gob.mx/cultura"
+                target="_blank">
+
+                Visitar página web
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>Altar de Muertos | Tradiciones Mexicanas</p>
+
+        <p>Hecho con amor por México</p>
+
+    </footer>
+
+</body>
+
+</html>
